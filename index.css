@@ -1,0 +1,193 @@
+
+.fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .creepster-regular {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body{
+    background-color: rgb(39, 43, 51);
+    background-image: url(/Img/06.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+/* Logo - Rick and Morty  */ 
+ .outside-img {
+  width: 70px; 
+  height: auto;
+  padding-left: 30px;
+  padding-top: 15px;
+  
+}
+
+/* Img - Fonte Rick and Morty  */
+.outside-img2{
+  width: 1000px;
+  margin: auto; 
+  display: block;
+  margin-top: 170px;
+  
+
+}
+
+ h1 { 
+    font-family:"Creepster", system-ui;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(233, 147, 176);
+    margin-top: 150px;
+    
+    text-shadow: 
+        0 0 3px black,   /* Sombra central */
+        0 0 3px black,   /* Sombra central */
+        0 0 50px #000000,  /* Sombra central */
+        0 0 10px black;   /* Sombra central */
+    -webkit-text-stroke: #000000,
+    text-stroke 50px rgb(0, 0, 0); /* Contorno do texto */
+}
+
+
+
+ nav {
+  float: right; /* Alinha a barra de navegação à direita */
+  font-family:"Creepster";
+  font-size: 28px;
+  padding: 10px 20px;
+  padding-top: 30px;
+
+  text-shadow: 
+  0 0 3px black,   
+  0 0 3px black,   
+  0 0 50px #000000,  
+  0 0 10px black;  
+ -webkit-text-stroke: #000000,
+ text-stroke 50px rgb(0, 0, 0); 
+}
+
+nav ul {
+  list-style-type: none; /* Remove marcadores de lista */ 
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Exibe os itens de navegação horizontalmente */ 
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove sublinhado padrão dos links */
+  color: rgb(48, 214, 192); 
+  
+}
+
+button { 
+  font-family: "Creepster";
+  color: rgb(48, 214, 192);
+  background-color: rgba(72, 77, 80, 0.849);
+  border:solid 2px rgba(218, 168, 74, 0.74);
+  position:relative; 
+  left: 50%; /* Posiciona a esquerda do botão no meio da página */
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  height: 40px;
+  width: 160px;
+  font-size: 22px;
+  border-radius: 5px;
+  
+  text-shadow: 
+  0 0 3px black,  
+  0 0 3px black,   
+  0 0 50px #000000,  
+  0 0 10px black;   
+ -webkit-text-stroke: #000000,
+ text-stroke 50px rgb(0, 0, 0); 
+  
+}
+
+
+#characters-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .character {
+    font-family: "Creepster", system-ui;
+    color: rgb(74, 160, 218);
+    font-size: 24px;
+
+    text-shadow: 
+   0 0 3px black,   
+   0 0 3px black,   
+   0 0 50px #000000,  
+   0 0 10px black;   
+   -webkit-text-stroke: #000000,
+   text-stroke 50px rgb(0, 0, 0); 
+
+    width: 550px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(218, 168, 74);
+    border-radius: 7px;
+    background-color: rgba(95, 104, 104, 0.753)
+    
+  }
+  
+  .character img {
+    width: 160px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+
+  .character-details {
+    flex: 1;
+  }
+  
+  .character-details h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgb(48, 214, 192);
+    font-size: 32px;
+  }
+  
+  .character-details p {
+    margin: 0;
+    color: rgb(74, 160, 218);
+  } 
+
+  
+
+  /* Adicionei uma media query para ajustar o layout em telas menores */
+  @media screen and (max-width: 768px) {
+    #characters-list {
+      justify-content: center; /* Centralizar personagens quando a tela for reduzida */
+    }
+    
+    .character {
+      width: calc(60% - 0px); /* Alterado para 50% da largura em telas menores que 768px */
+    }
+  }
+  
+  /* Adicionei outra media query para ajustar o layout em telas ainda menores */
+  @media screen and (max-width: 480px) {
+    .character {
+      width: calc(100% - 20px); /* Alterado para 100% da largura em telas menores que 480px */
+    }
+  }
